@@ -14,9 +14,14 @@
 // No hints this time ;)
 
 
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(count: i32) -> i32 {
+    if count > 40 {
+        return count;
+    } else {
+        return 2*count;
+    }
+}
 
 // Don't modify this function!
 #[test]
@@ -30,11 +35,4 @@ fn verify_test() {
     assert_eq!(80, price2);
     assert_eq!(41, price3);
     assert_eq!(65, price4);
-}
-fn calculate_price_of_apples(num:u32)-> u32{
-    if num<=40{
-        num*2
-    }else{
-        num
-    }
 }
